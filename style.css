@@ -40,11 +40,15 @@ p{
     color: hsl(214, 17%, 51%);
     padding-top: 20px;
 }
+footer{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
 .writer{
     display: flex;
     align-items: center;
     gap: 15px;
-    padding-top: 10px;
 }
 .writer-img{
     width: 60px;
@@ -61,6 +65,7 @@ span{
 .share-icon{
     position: relative;
     left: 150px;
+    /* margin-top:-10rem; */
     background-color: hsl(211, 19%, 76%);
     padding: 10px 10px;
     border-radius: 50%;
@@ -69,11 +74,13 @@ span{
   background-color: hsl(217, 19%, 35%);
   color: white;
   display: flex;
+  align-items: center;
   gap: 10px;
-  padding: 5px 20px;
-  margin-bottom: 5rem;
-
- 
+ /* border: 2px solid black; */
+ width: 8rem;
+ height: 1.5rem;
+  margin-top:-4rem;
+  
 } 
 .share{
     color: hsl(214, 17%, 51%);
@@ -82,4 +89,64 @@ span{
 }
 .hide{
     display: none;
+}
+@media screen and (max-width: 600px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        width: 480px;
+        margin: 200px auto;
+    }
+    .drawer-image{
+        width: 480px;
+        height: 400px;
+        }
+    .content{
+        padding: 40px 40px;
+            
+        }
+     .content
+p{
+  align-items: center;
+    padding-top: 10px;
+}
+/* .share-icon{
+    position: relative;
+    left: 100px;
+} */
+footer{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.share-icon{
+    position: relative;
+    left: 150px;
+    /* margin-top:-10rem; */
+    background-color: hsl(211, 19%, 76%);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.social-icons{
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+  display: flex;
+  align-items: center;
+  /* justify-self: center; */
+  gap: 10px;
+ /* border: 2px solid black; */
+ /* justify-self: self-start; */
+ width: 8rem;
+ height: 1.5rem;
+  margin-top: 7.5rem;
+  /* padding-right: ; */
+  padding: 20px 240px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: -15.3rem;
+} 
+.hide{
+    display: none;
+}
 }
